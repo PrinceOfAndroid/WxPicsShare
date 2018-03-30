@@ -86,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
      */
     private void shareToWx() {
         Intent intent = new Intent();
+//        intent.setComponent(new ComponentName("com.tencent.mm", "com.tencent.mm.ui.tools.ShareImgUI"));  分享给好友
         intent.setComponent(new ComponentName("com.tencent.mm", "com.tencent.mm.ui.tools.ShareToTimeLineUI"));
         intent.putExtra("Kdescription", "分享测试");
         intent.setAction(Intent.ACTION_SEND_MULTIPLE);
